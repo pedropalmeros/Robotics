@@ -64,7 +64,7 @@ def cosd(t):
 
 
 def RotZ(t):
-    Rz = np.array(([cosd(t),-sind(t),0],[sind(t),cosd(t),0],[0,0,1]))
+    Rz = np.array(([cosd(t),-sind(t),0,0],[sind(t),cosd(t),0,0],[0,0,1,0],[0,0,0,1]))
     return Rz
 
 def drawVector(p_fin, p_init=[0,0,0], color='black',linewidth=1):
